@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <section>
+        <div id="div1"></div>
+
+        <div id="formdiv">
+
+            <div id="formfundo">
+                <div id="espaço">
+
+                <form action="">   
+
+                    <div id="nome">
+                        <div><label>Nome</label></div>
+                        <div><input type="text" id="nomee" placeholder="Nome" oninput=mascara_nome() maxlenght="40"></div>
+                    </div>
+
+                    <div id="endereco">
+                        <div><label>Endereço</label></div>
+                        <div><input type="text" id="enderecoo" placeholder="Endereço"></div>
+                    </div>
+
+                    <div id="cep1">
+                        <div><label>CEP</label></div>
+                        <div><input type="text" id="cep" placeholder="xx.xxx-xxx-" oninput=mascara_cep() maxlength="10"></div>
+                    </div>
+
+                    <div id="cpf1">
+                        <div><label>CPF</label></div>
+                        <div><input type="text" id="cpf" placeholder=" xxx.xxx.xxx-xx" oninput=mascara_cpf() maxlength="14"></div>
+                    </div>
+                    
+                    <div id="tel">
+                        <div><label>Tel</label></div>
+                        <div><input type="tel" placeholder="(31)99999-9999" id="telefone"  oninput=mascara_telefone() maxlength="14"></div>
+                    </div>
+                    
+                    <div id="cnpj1">
+                        <div><label>CNPJ</label></div>
+                        <div><input type="text" id="cnpj" placeholder="XX.XXX.XXX/0001-XX" oninput=mascara_cnpj() maxlength="18"></div>
+                    </div>
+                    
+                    <div id="codigo">
+                        <div><label>Código</label></div>
+                        <div><input type="text" id="" placeholder="xx_xx//xxx-xxx.9.xxx" maxlength="20"></div>
+                    </div>
+                    
+                    <div><input type="button" class="send:after" id="myBtn" value="Search"></div>
+            </form>
+            </div>
+            </div>
+        </div>
+
+        
+        <div id="div2"></div>
+    </section>
+    
+</body>
+</html>
