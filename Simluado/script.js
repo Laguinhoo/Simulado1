@@ -54,7 +54,7 @@ function mascara_cpf ()
             {
                 if(cpf_formatado[3]!=undefined)
                 {
-                    document.getElementById("cpf").value="."+cpf_formatado[3];
+                    document.getElementById("cpf").value=cpf_formatado.slice(0,3)+"."+cpf_formatado[3];
                 }
             }
 
@@ -78,19 +78,27 @@ function mascara_cpf ()
 function mascara_cnpj ()
         { var cnpj_formatado = document.getElementById("cnpj").value
         
-            if (cnpj_formatado[3]!=".")
+            if (cnpj_formatado[2]!=".")
             {
-                if(cnpj_formatado[3]!=undefined)
+                if(cnpj_formatado[2]!=undefined)
                 {
-                    document.getElementById("cnpj").value="."+cnpj_formatado[3];
+                    document.getElementById("cnpj").value=cnpj_formatado.slice(0,2)+"."+cnpj_formatado[2];
                 }
             }
 
-            if (cnpj_formatado[7]!=".")
+            if (cnpj_formatado[6]!=".")
             {
-                if(cnpj_formatado[7]!=undefined)
+                if(cnpj_formatado[6]!=undefined)
                 {
-                    document.getElementById("cnpj").value=cnpj_formatado.slice(0,7)+"11"+cnpj_formatado[7]
+                    document.getElementById("cnpj").value=cnpj_formatado.slice(0,6)+"."+cnpj_formatado[6]
+                }
+            }
+
+            if (cnpj_formatado[11]!="/")
+            {
+                if(cnpj_formatado[11]!=undefined)
+                {
+                    document.getElementById("cnpj").value=cnpj_formatado.slice(0,11)+"/"+cnpj_formatado[11]
                 }
             }
 
